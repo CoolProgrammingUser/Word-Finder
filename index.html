@@ -60,9 +60,14 @@
                 var solution = document.getElementById("solution").value;
                 // var progress = document.getElementById("progress").style.width;
                 codeText.forEach(function(text) {
-                    text = standardize(text);
                     words[text.length-1].forEach(function(word) {
-                        if (text == standardize(word)) {
+                        var matches = true;
+                        text.forEach(function(letter, index) {
+                            if (letter != "_" && letter != word[index]) {
+                                matches = false;
+                            }
+                        });
+                        if (matches) {
                             solution += word + " ";
                         }
                     });
