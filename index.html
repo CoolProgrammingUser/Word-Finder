@@ -118,30 +118,35 @@
         </style>
     </head>
     <body>
-        <div id="before">
-            <textarea cols="60" rows="10" placeholder="Type the code here." id="code"></textarea>
-            <br>
-            <br>
-            <button type="button" id="decode">
-                Decode
-            </button>
-        </div>
-        <div id="during">
-            <h3>
-                Working...
-            </h3>
-            <div style="width:30em; height:1em; background:#fff; border:.1em solid black;">
-            <div id="progress">
+        <h1>
+            Word Finder
+        </h1>
+        <section>
+            <div id="before">
+                <textarea cols="60" rows="10" placeholder="Type the code here." id="code"></textarea>
+                <br>
+                <br>
+                <button type="button" id="decode">
+                    Decode
+                </button>
             </div>
+            <div id="during">
+                <h3>
+                    Working...
+                </h3>
+                <div style="width:30em; height:1em; background:#fff; border:.1em solid black;">
+                <div id="progress">
+                </div>
+                </div>
             </div>
-        </div>
-        <div id="after">
-            <textarea cols="60" rows="10" id="solution" readonly></textarea>
-            <p id="solutionNumber"></p>
-            <button type="button" id="newCode">
-                Try a new<br>
-                code
-            </button>
-        </div>
+            <div id="after">
+                <textarea cols="60" rows="10" id="solution" readonly></textarea>
+                <p id="solutionNumber"></p>
+                <button type="button" id="newCode">
+                    Try a new<br>
+                    code
+                </button>
+            </div>
+        </section>
     </body>
 </html>
